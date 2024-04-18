@@ -1,3 +1,6 @@
+1. replace driver for Sonoma 14.4.1 - airportItlwm.kext
+2. OC version 9.9 release 
+
 # GMKtec-M5
 
 ## System Info
