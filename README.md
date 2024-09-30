@@ -10,7 +10,7 @@ Wired network card：8125BS
 
 Wireless network card: AX210 (not available in macOS 15.0)
 
-System version: Somona 14.5 (23F79) 
+System version: Sequoia 15.0 (24A335)
 
 # Kexts 列表
 
