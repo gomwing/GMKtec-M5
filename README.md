@@ -44,18 +44,46 @@ System version: Somona 14.5 (23F79) [support 10.13~14.5]
 
 15. [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)
 
-## reference
+## 使用教程
 
-1. [NootedRed](https://github.com/ChefKissInc/NootedRed)
+下载 [Rufus](https://rufus.ie/zh) 并创建 USB 启动盘
 
-2. [ryzen-hackintosh](https://github.com/mikigal/ryzen-hackintosh)
+![image1](./assets/image1.png)
 
-3. [opencore](https://dortania.github.io/OpenCore-Legacy-Patcher)
+利用 [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases) 里的 `/Utilities/macrecovery/macrecovery.py` 下载最新版基础镜像
 
-4. [USBToolBox](https://github.com/USBToolBox/tool)
+```sh
+python macrecovery.py -os latest download
+```
 
-5. [gibMacOS](https://github.com/corpnewt/gibMacOS)
+![image2](./assets/image2.png)
 
-6. [MountEFI](https://github.com/corpnewt/MountEFI)
+将下载好的镜像和 EFI 一并放入启动盘中
 
-7. [SSDTTime](https://github.com/corpnewt/SSDTTime)
+![image3](./assets/image3.png)
+
+开机按下 `ESC` 进入 BIOS, 选择 USB 启动, 按提示进行安装
+
+安装之前最好更新 OC 并将非必要驱动关闭, 避免驱动的影响 ( 因为 BaseSystem.dmg 是最新的, EFI 未必及时更新 )
+
+![image4](./assets/image4.png)
+
+![image5](./assets/image5.png)
+
+如果出现 `[EB|#LOG:EXITBS:START]` 可能还需要[更新补丁](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/kernel-issues.html#kernel-patch-issues)
+
+下载 [`patches.plist`](https://github.com/AMD-OSX/AMD_Vanilla) 并将里边的补丁复制到 `config.plist` 里, 并修改内核数
+
+![image6](./assets/image6.png)
+
+## 工具
+
+| Tools                                                                         | Description                            |
+| :---------------------------------------------------------------------------- | :------------------------------------- |
+| [NootedRed](https://github.com/ChefKissInc/NootedRed)                         | The AMD Vega iGPU support patch kext   |
+| [ryzen-hackintosh](https://github.com/mikigal/ryzen-hackintosh)               | OpenCore EFI for AMD Ryzen Hackintosh  |
+| [OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher) | 让老款 Mac 电脑安装新的 MacOS          |
+| [USBToolBox](https://github.com/USBToolBox/tool)                              | USB 端口定制映射工具                   |
+| [gibMacOS](https://github.com/corpnewt/gibMacOS)                              | Py2/py3 script that can download macOS |
+| [MountEFI](https://github.com/corpnewt/MountEFI)                              | 挂载 EFI 分区脚本                      |
+| [SSDTTime](https://github.com/corpnewt/SSDTTime)                              | SSDT/DSDT hotpatch                     |
