@@ -8,11 +8,11 @@ GPU: AMD Radeon Graphics 4 GB
 
 Wired network card：8125BS
 
-Wireless network card: AX210
+Wireless network card: AX210 (not available in macOS 15.0)
 
-System version: Somona 14.5 (23F79) [support 10.13~14.5]
+System version: Somona 14.5 (23F79) 
 
-# kexts
+# Kexts 列表
 
 1. [Lilu](https://github.com/acidanthera/Lilu)
 
@@ -24,25 +24,23 @@ System version: Somona 14.5 (23F79) [support 10.13~14.5]
 
 5. [RestrictEvents](https://github.com/acidanthera/RestrictEvents)
 
-6. [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
+6. [AMDRyzenCPUPowerManagement](https://github.com/trulyspinach/SMCAMDProcessor)
 
-7. AMDRyzenCPUPowerManagement --> with SMCAMDProcessor
+7. [AppleALC](https://github.com/acidanthera/AppleALC)
 
-8. [AppleALC](https://github.com/acidanthera/AppleALC)
+8. [SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
 
-9. [SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor)
+9. [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet)
 
-10. [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet)
+10. [NootedRed](https://github.com/ChefKissInc/NootedRed)
 
-11. [NootedRed](https://github.com/ChefKissInc/NootedRed)
+11. [USBToolBox](https://github.com/USBToolBox/kext)
 
-12. USBPorts --> created by [Hackintool](https://github.com/benbaker76/Hackintoo) --> before installation, you need use [USBToolBox](https://github.com/USBToolBox/kext)
+12. [AirportItlwm](https://github.com/OpenIntelWireless/itlwm)
 
-13. [AirportItlwm](https://github.com/OpenIntelWireless/itlwm)
+13. [RadeonSensor](https://github.com/ChefKissInc/RadeonSensor)
 
-14. [RadeonSensor](https://github.com/ChefKissInc/RadeonSensor)
-
-15. [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)
+14. [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)
 
 ## 使用教程
 
