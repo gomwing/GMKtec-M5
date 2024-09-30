@@ -12,7 +12,7 @@ Wireless network card: AX210 (not available in macOS 15.0)
 
 System version: Sequoia 15.0 (24A335)
 
-# Kexts 列表
+## Kexts 列表
 
 1. [Lilu](https://github.com/acidanthera/Lilu)
 
